@@ -28,7 +28,15 @@ Console.WriteLine(quotient2);
 
 int a = 3;
 int b = 3;
-int c = 2;
-int d = 1;
-int M = (a * b) / (c + d);
-Console.WriteLine(M);
+int c = 0;
+int d = 0;
+
+if (c + d != 0)
+{
+    int M = (a * b) / (c + d);
+    Console.WriteLine(M);
+}
+else
+{
+    Console.WriteLine("На 0 делить нельзя");
+}
