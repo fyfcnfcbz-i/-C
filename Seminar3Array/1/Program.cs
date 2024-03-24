@@ -10,21 +10,21 @@ int[] array = new int[n];
 
 
 // while
-int ind = 0;
-while (ind < array.Length)
+int i = 0;
+while (i < array.Length)
 {
-    Console.Write($"{array[ind]} ");
-    ind++;
+    Console.Write($"{array[i]} ");
+    i++;
 }
 Console.WriteLine();
 
 
 // for
 
-for (int i = 0; i < array.Length; i++)
+for (int ind = 0; i < array.Length; i++)
 {
-    //array[i] = 7;
-    Console.Write($"{array[i]} ");
+    //array[ind] = 7;
+    Console.Write($"{array[ind]} ");
 }
 Console.WriteLine();
 
@@ -49,11 +49,11 @@ void PrintMas(int[] array)  // тип void означает функцию ко�
 PrintMas(array);
 
 
-int[] RandomMas(int[] col) // функция - возвращает целочисленное значение int
+int[] RandomMas(int[] col) //функция - возвращает целочисленное значение int
 {
     for (int i = 0; i < col.Length; i++) //проходимся по массиву и каждому элементу с i индексом приваиваем рндомное значение
     {
-        col[i] = new Random().Next(1,9);
+        col[i] = new Random().Next(1, 9);
     }
 
     return col;
@@ -83,3 +83,15 @@ else
 {
     Console.WriteLine("Нет");
 }
+
+//
+
+string S(int[] col, int m)
+{
+    foreach (var item in col)
+    {
+        if (item == m) return "Да";
+    }
+    return "Нет";
+}
+Console.WriteLine(S(array, m));
