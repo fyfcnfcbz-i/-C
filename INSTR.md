@@ -105,6 +105,17 @@ Console.WriteLine($"Квадрат числа {number2} равен {number1}")
 
   **% -> mod**
 
+______
+
+
+### Unicode для вывода кириллицы
+```sh
+using System.Text;
+Console.InputEncoding = Encoding.Unicode;
+Console.OutputEncoding = Encoding.Unicode;
+```
+
+
  
 
 
